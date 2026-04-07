@@ -1,6 +1,7 @@
 import { makeAbout } from "./about.js";
 import { makeHome } from "./home.js";
 import { makeMenu } from "./menu.js";
+import "./style.css";
 
 function srceenControl(){
     const content = document.getElementById("content");

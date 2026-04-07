@@ -2,7 +2,7 @@ import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
-  mode: "production",
+  mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "main.js",
@@ -27,7 +27,11 @@ export default {
       {
         test: /\.(png|svg|jpg|jpeg|gif|avif)$/i,
         type: "asset/resource",
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
 };
