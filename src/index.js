@@ -4,6 +4,8 @@ import { makeMenu } from "./menu.js";
 import "./style.css";
 
 function srceenControl(){
+    makeHome();
+
     const content = document.getElementById("content");
     const home = document.getElementById("home");
     const about = document.getElementById("about");

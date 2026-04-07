@@ -1,0 +1,27 @@
+.home_div{
+    height: 27rem;
+    width: 100%;
+    margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.515);
+}
+
+.home_div h1{
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.home_div h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home_div p{
+    font-size: 2rem;
+    font-weight: 400;
+}

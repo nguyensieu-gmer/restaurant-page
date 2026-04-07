@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*
   Josh's Custom CSS Reset
@@ -48,25 +49,31 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+h1{
+    font-family: var(--second-font);
+}
+
 :root {
-  /* Màu nền trang */
-  --color-background: #fafafa;   /* giấy cũ, beige nhẹ */
-  --color-container: #e1e1e1;    /* container nhạt hơn nền để tạo chiều sâu */
+  /* Background */
+  --color-background: #0f1115;   /* đen xanh sang */
+  --color-container: #1a1d23;    /* xám đậm hơn để nổi khối */
 
-  /* Màu chữ */
-  --color-text-main: #000000;    /* nâu sẫm, dễ đọc */
-  --color-text-secondary: #5e5e5e; /* nâu nhạt hơn cho subtitle / caption */
-  --color-text-accent: #dfdfdf;  /* nâu đỏ ấm để nhấn nhá link / highlight */
+  /* Text */
+  --color-text-main: #f5f5f5;       /* trắng nhẹ (không gắt) */
+  --color-text-secondary: #b3b3b3;  /* xám nhạt */
+  --color-text-accent: #d4af37;     /* GOLD ✨ */
 
-  /* Màu nút / link / accent */
-  --color-accent: #4a86a4;       /* nâu vàng ấm, tạo điểm nhấn */
-  --color-accent-hover: #99c6dc; /* hover đậm hơn */
+  /* Accent */
+  --color-accent: #d4af37;          /* vàng gold */
+  --color-accent-hover: #f1d97a;    /* gold sáng hơn */
 
-  /* Border, divider */
-  --color-border: #304360;       /* nâu nhạt / sepia */
+  /* Border */
+  --color-border: #2a2f38;          /* viền rất subtle */
 
+  /* Typography */
   --body-font: "Montserrat", sans-serif;
   --second-font: "Dancing Script", cursive;
+
   --biggest-font-size: 3rem;
   --bigger-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -78,4 +85,36 @@ h1, h2, h3, h4, h5, h6 {
   --font-regular: 400;
   --font-semi-bold: 600;
   --font-bold: 700;
+}
+
+.nav_bar{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #2a2f3897;
+}
+
+button {
+    padding: .5rem;
+    width: 6rem;
+    height: 3rem;
+    border: none;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.15);
+    color: rgb(255, 255, 255);
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    box-shadow: 0px 0px 4px 1px rgb(237, 236, 236);
 }
